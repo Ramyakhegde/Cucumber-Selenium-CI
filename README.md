@@ -42,6 +42,7 @@ It focuses on building reliable, maintainable, and scalable test automation that
 -  Integrate **Slack or Email notifications** for test results  
 -  Add **cross-browser testing** support using Selenium Grid  
 
+Test CI Trigger
 ---
 
 ## 🏁 How to Run Tests
