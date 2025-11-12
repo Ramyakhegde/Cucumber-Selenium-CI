@@ -43,6 +43,7 @@ It focuses on building reliable, maintainable, and scalable test automation that
 -  Add **cross-browser testing** support using Selenium Grid  
 
 Test CI Trigger
+Test for auto trigger
 ---
 
 ## 🏁 How to Run Tests
