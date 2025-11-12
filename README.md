@@ -1,84 +1,46 @@
-Cucumber-Selenium CI Pipeline
-Overview
+#  Cucumber Selenium CI/CD Automation Project
 
-This project demonstrates a Continuous Integration (CI) pipeline using Selenium WebDriver, Cucumber (BDD), and Jenkins.
-The purpose of this setup is to automate browser-based functional testing and ensure tests run automatically whenever code changes are committed or a Jenkins build is triggered.
+This project demonstrates a complete **end-to-end automation testing framework** built with **Selenium WebDriver**, **Cucumber (BDD)**, and **Maven**, integrated into a **Jenkins CI/CD pipeline**.  
+It focuses on building reliable, maintainable, and scalable test automation that can be easily triggered via Jenkins jobs or GitHub commits.
 
-Tech Stack
+---
 
-Java (JDK 17)
+##  Current Features
+-  Automated web testing using **Selenium WebDriver**
+-  BDD test scenarios written in **Cucumber (Gherkin)**
+-  Maven for build management and dependencies
+-  Jenkins integration for **Continuous Integration (CI)**
+-  Example test: Validating DuckDuckGo search functionality
 
-Selenium WebDriver
+---
 
-Cucumber (BDD Framework)
+##  Tech Stack
+| Tool | Purpose |
+|------|----------|
+| **Java** | Programming language |
+| **Selenium WebDriver** | Browser automation |
+| **Cucumber** | Behavior Driven Development (BDD) |
+| **Maven** | Build and dependency management |
+| **JUnit** | Test execution |
+| **Jenkins** | Continuous Integration / Continuous Deployment |
 
-JUnit
+---
 
-Maven (Build Tool)
+##  CI/CD Workflow
+1. Developer pushes code to GitHub   
+2. Jenkins automatically triggers build   
+3. Maven runs all Cucumber tests 
+4. Test results (pass/fail) appear in Jenkins reports   
 
-Jenkins (CI Server)
+---
 
-CI Pipeline Workflow
-
-Developer commits code to the GitHub repository.
-
-Jenkins automatically pulls the latest code from the repository.
-
-Maven builds the project and runs the automated tests (mvn clean test).
-
-Cucumber executes test scenarios written in Gherkin syntax.
-
-Test results and reports are generated automatically inside the target folder.
-
-Example Feature File
-
-Feature: DuckDuckGo Search Functionality
-
-Scenario: Verify DuckDuckGo search works
-  Given I open the browser
-  When I navigate to "https://duckduckgo.com"
-  And I search for "Selenium WebDriver"
-  Then the page title should contain "Selenium WebDriver"
-
-Jenkins Setup
-
-Open Jenkins and create a new Freestyle Project.
-
-Under Source Code Management, select Git and provide your repository URL.
-
-Under the Build section, add the following command:
-
-mvn clean test
-
-
-Save the configuration.
-
-Click Build Now to trigger the pipeline. Jenkins will pull the latest code, run Maven tests, and display results in the console output.
-
-Folder Structure
-cucumber_selenium/
-├── pom.xml
-├── src/
-│   ├── main/
-│   │   └── java/
-│   └── test/
-│       ├── java/
-│       │   ├── runners/
-│       │   └── stepDefinitions/
-│       └── resources/
-│           └── features/
-│               └── DuckDuckGoSearch.feature
-└── target/
-
-Future Scope
-
-Integrate detailed HTML reports using Allure or Extent Reports.
-
-Extend the project to include Continuous Deployment (CD) to automate post-test deployments.
-
-Configure parameterized Jenkins builds for flexible test execution.
-
-Enable parallel test execution to reduce build time.
+##  Future Enhancements
+-  Integrate **API testing** using RestAssured  
+-  Add **Cucumber HTML and JSON reporting** in Jenkins  
+   Connect with **Docker** to run tests in containers  
+-  Implement **parallel test execution** for faster runs  
+-  Integrate **Slack or Email notifications** for test results  
+-  Add **cross-browser testing** support using Selenium Grid  
 
 ---
 
