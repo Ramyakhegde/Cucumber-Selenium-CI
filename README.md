@@ -37,13 +37,11 @@ It focuses on building reliable, maintainable, and scalable test automation that
 ##  Future Enhancements
 -  Integrate **API testing** using RestAssured  
 -  Add **Cucumber HTML and JSON reporting** in Jenkins  
-   Connect with **Docker** to run tests in containers  
+- Connect with **Docker** to run tests in containers  
 -  Implement **parallel test execution** for faster runs  
 -  Integrate **Slack or Email notifications** for test results  
 -  Add **cross-browser testing** support using Selenium Grid  
 
-Test CI Trigger
-Test for auto trigger
 ---
 
 ## 🏁 How to Run Tests
